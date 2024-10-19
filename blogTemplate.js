@@ -64,7 +64,7 @@ export async function getPosts() {
 
 export const tempBlog = ({ title, displayImage, username, content, date }) => {
   const img = document.createElement("img");
-  img.src = "../assets/images/user2.jpeg";
+  img.src = "./assets/images/user2.jpeg";
   img.alt = "Profile Picture";
   return `
   <div class="blog-box">
