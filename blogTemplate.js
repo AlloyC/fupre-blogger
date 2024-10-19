@@ -70,7 +70,7 @@ export const tempBlog = ({ title, displayImage, username, content, date }) => {
       ${
         displayImage
           ? `<img src=${displayImage} alt=''/>`
-          : `<img src="./assets/images/user2.jpeg" alt="Profile Picture" />`
+          : `<img src="../assets/images/user2.jpeg" alt="Profile Picture" />`
       }
     </div>
     </div>
