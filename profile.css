@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3 {
+    font-family: 'Futura', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: navy;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Header Image Styles */
+.header-image {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+    opacity: 0.8;
+}
+
+.header-image .welcome-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Main Container Styles */
+.main-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bar {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-bar h2 {
+    margin-bottom: 20px;
+}
+
+.main-bar img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+.main-bar .img-1{
+
+    background-color: transparent;
+    height: 50px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: navy;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-image {
+        height: 200px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .main-bar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .header-image {
+        height: 150px;
+    }
+
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    .main-bar {
+        width: 100%;
+    }
+}

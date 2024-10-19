@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Student Blogger: FUPRE CHAPTER</title>
+    <link rel="stylesheet" href="./signup.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <nav>
+      <!-- Same navbar as in index.html -->
+      <div class="navbar">
+        <div class="logo">STUDENT BLOGGER: FUPRE CHAPTER</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="main-bar">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" /><br />
+
+          <label for="college">College:</label><br />
+          <select id="college" name="college">
+            <option value=" engineering">Engineering</option>
+            <option value="science">Science</option>
+            <option value="computing">Computing</option></select
+          ><br />
+
+          <input type="checkbox" id="stay-signed-in" name="stay-signed-in" />
+          <label for="stay-signed-in">Stay signed in</label><br /><br />
+
+          <input type="submit" value="Sign Up" />
+        </form>
+        <p>Already have an account? <a href="./login.html">Login here</a>.</p>
+      </div>
+    </div>
+
+    <footer>
+      <!-- Same footer as in index.html -->
+      <div class="footer-content">
+        <a href="https://facebook.com" class="social-icon">Facebook</a>
+        <a href="https://twitter.com" class="social-icon">Twitter</a>
+        <a href="https://instagram.com" class="social-icon">Instagram</a>
+      </div>
+
+      <!-- <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      export const auth = getAuth(app);
+// </script> -->
+
+      <!-- </script> -->
+      <script type="module" src="./signup.js"></script>
+      <!-- <script src="./signup.php"></script> -->
+    </footer>
+  </body>
+</html>

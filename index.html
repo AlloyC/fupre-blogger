@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT BLOGGER: FUPRE CHAPTER</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/all.min.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="navbar">
+        <div class="logo">STUDENT BLOGGER: FUPRE CHAPTER</div>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a id="login" href="./login.html">Login</a></li>
+          <li><a id="sign-up" href="./signup.html">Sign Up</a></li>
+          <li><button id="log-out" class="hidden">Log Out</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Background Image -->
+    <header>
+      <div class="header-image">
+        <img
+          src="./assets/images/FUPRE-1062x598.jpg"
+          alt="Student Blogger Logo"
+          class="header-logo"
+        />
+        <div class="welcome-text">
+          WELCOME TO FUPRE BLOG, <br />
+          This is the general blog page where you can find the latest updates
+          and posts.
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+      <div class="main-bar"></div>
+
+      <div class="side-bar">
+        <h3>Recent Posts</h3>
+
+        <ul id="side-bar">
+          <!-- <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li>
+          <li><a href="article1.html">Article Title 1</a></li> -->
+        </ul>
+        <a href="./see-more.html" class="see-more">See More</a>
+      </div>
+    </div>
+
+    <!-- Button -->
+
+    <button id="addPost" class="flex">
+      + <span id="addPostMessage" class="hidden add-message">Add new Post</span>
+    </button>
+
+    <form id="post-form" class="hidden">
+      <div class="post-form">
+        <div class="flex flex-inline">
+          <label for="title">Title:</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="flex flex-inline">
+          <label for="content">Body:</label>
+          <textarea id="content" placeholder="Enter your post..."></textarea>
+        </div>
+        <input type="submit" id="uploadPost" value="Post" />
+      </div>
+    </form>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>&copy; 2024 Student Blog. All rights reserved.</p>
+    </footer>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"
+    ></script>
+    <script type="module" src="./exports.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./login.js"></script>
+    <script type="module" src="./blogTemplate.js"></script>
+  </body>
+</html>
