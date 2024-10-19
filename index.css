@@ -5,6 +5,10 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h2,
@@ -223,16 +227,19 @@ a:hover {
 
 /* button */
 #addPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: navy; /* Green background */
   border: none; /* Remove borders */
   color: white; /* White text */
-  /* width: 50px; /* Set the width of the button */
-  /*height: 50px;  /* Set the height of the button */
+  width: 50px; /* Set the width of the button */
+  height: 50px; /*  Set the height of the button */
   padding: 20px;
   border-radius: 50%; /* Make the button round */
-  font-size: 29px; /* Increase font size for the plus sign */
+  font-size: 29px; /* Increase font size for the plus sign
   text-align: center; /* Center the text */
-  line-height: 50%; /* Align the plus sign vertically */
+  /* line-height: 1rem; /* Align the plus sign vertically */
   cursor: pointer; /* Add a pointer on hover */
   transition: background-color 0.3s; /* Smooth transition */
   position: fixed;
@@ -241,14 +248,20 @@ a:hover {
   right: 280px;
 }
 
+.plus {
+  font-size: 30px;
+  height: 30px;
+  line-height: 1.5rem;
+}
+
 /* Add a hover effect */
 #addPost:hover {
   background-color: #3490db; /* Darker green */
   border-radius: 10px;
+  width: auto;
 }
 
-#log-out{
-
+#log-out {
   color: navy;
   background-color: transparent;
   text-transform: uppercase;
@@ -256,21 +269,18 @@ a:hover {
   font-size: larger;
 }
 
-
-.show-more{
+.show-more {
   color: navy;
   background-color: transparent;
-  
+
   border: none;
-  
 }
 
-.show-less{
+.show-less {
   color: navy;
   background-color: transparent;
-  
+
   border: none;
-  
 }
 
 /* Footer Styles */

@@ -26,7 +26,7 @@ const blogPopulator = async () => {
   let blogs = "";
   let sideBlogs = "";
   [...posts]
-    .slice(0, 3)
+    .slice(0, 4)
     .map((post) => {
       return tempBlog({ ...post });
     })
@@ -35,7 +35,7 @@ const blogPopulator = async () => {
     });
 
   [...posts]
-    .slice(3, 11)
+    .slice(4, 11)
     .map((post) => {
       return postTemplate({ ...post });
     })
